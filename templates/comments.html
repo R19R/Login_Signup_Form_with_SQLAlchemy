@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome</h2>
+    <form>
+        <p>Name <input type="text" id="name_detail" name='name'></p>
+        <p>Comments <input type="text" id="comments_detail" name='comment'></p>
+        
+        <button type="submit" id="btn1">submit</button>
+    </form>
+    <table id="display">
+        <tr>
+            <td>UID</td>
+            <td>Name</td>
+            <td>Comments</td>
+        </tr>
+    </table>
+    <a href="/logout">Logout</a>
+<script src="{{url_for('static', filename='js/comments.js')}}"></script>
+</body>
+</html>
